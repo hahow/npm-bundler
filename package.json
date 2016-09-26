@@ -3,7 +3,7 @@
   "version": "7.1.2",
   "description": "Opinionated ES6 library bundler based on rollup and buble",
   "license": "MIT",
-  "repository": "bfred-it/npm-bundler",
+  "repository": "hahow/npm-bundler",
   "author": "Federico Brigante <bfred-it@users.noreply.github.com> (twitter.com/bfred_it)",
   "bin": "index.js",
   "files": [
@@ -16,7 +16,7 @@
     "rollup-plugin-node-resolve": "^1.7.0"
   },
   "bugs": {
-    "url": "https://github.com/bfred-it/npm-bundler/issues"
+    "url": "https://github.com/hahow/npm-bundler/issues"
   },
-  "homepage": "https://github.com/bfred-it/npm-bundler#readme"
+  "homepage": "https://github.com/hahow/npm-bundler#readme"
 }
