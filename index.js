@@ -3,7 +3,6 @@
 const path = require('path');
 const rollup = require('rollup').rollup;
 const buble = require('rollup-plugin-buble');
-const uglify = require('rollup-plugin-uglify');
 const requireExternals = require('rollup-plugin-node-resolve');
 const filesize = require('rollup-plugin-filesize');
 
@@ -56,15 +55,6 @@ if (globalVarName) {
 			requireExternals({
 				browser: true,
 				jsnext: true
-			}),
-			uglify(isByteCountingOnly ? {} : {
-				output: {
-					comments: (node, comment) => {
-						if (comment.type === 'comment2') {
-							return comment.value[0] === '!';
-						}
-					}
-				}
 			}),
 			filesize({
 				format: {
